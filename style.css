@@ -1,0 +1,12 @@
+.bg-dark-red {
+  background-color: #7e2625 !important;
+}
+
+.btn-primary {
+  background-color: #7e2625;
+}
+
+.btn-primary:hover {
+  background-color: bisque;
+  color: #7e2625;
+}

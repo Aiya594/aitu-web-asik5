@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Registration form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="text-center p-3 bg-dark-red text-light">
+        <h1>Registration Form</h1>
+    </header>
+
+    <div class="container-fluid">
+
+        <form class="container mt-5 ">
+            <div class="form">
+                <div class="form-row">
+                    <div class="form-row">
+
+                        <div class="col-md-6 mb-3">
+                            <label for="name"><b>First name:</b></label>
+                            <input type="text" class="form-control" id="name" placeholder="first name" name="name"
+                                required>
+                            <div class="invalid-feedback">First name is required</div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label for="email"><b>Last Name:</b></label>
+                            <input type="text" class="form-control" id="lastname" placeholder="last name"
+                                name="lastname" required>
+                            <div class="invalid-feedback">Last name is required</div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="email"><b>Email</b></label>
+                    <input type="email" class="form-control" placeholder="Enter Email" name="email" id="email" required>
+                    <div class="invalid-feedback">Eneter a valid email</div>
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="col-md-6 mb-3">
+                        <label for="pwd"><b>Password:</b></label>
+                        <input type="password" id="pwd" class="form-control" placeholder="Enter password" minlength="8"
+                            maxlength="30" required>
+                        <div class="invalid-feedback">Password must contain 8-30 symbols</div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="confirm-pwd"><b>Confirm password:</b></label>
+                        <input type="password" id="confirm-pwd" class="form-control" placeholder="confirm password"
+                            minlength="8" maxlength="30" required>
+                        <div class="invalid-feedback">Password do not match</div>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label><b>Gender:</b></label><br>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">Female
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">Male
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><b>Hobbies:</b></label>
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="Reading">Reading
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="videogames">VideoGames
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="cooking">Cooking
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Select your country:</label>
+                    <select class="form-control" id="country">
+                        <option>Kazakhstan</option>
+                        <option>Ukraine</option>
+                        <option>China</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn">Reset</button>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
