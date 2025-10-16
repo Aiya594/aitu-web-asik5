@@ -2,11 +2,27 @@
   background-color: #7e2625 !important;
 }
 
-.btn-primary {
+.btn-primary,
+button {
+  color: aliceblue;
   background-color: #7e2625;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+button:hover {
   background-color: bisque;
   color: #7e2625;
+}
+
+.part {
+  width: auto;
+  margin: 2rem;
+}
+
+.area {
+  width: 100% !important;
+}
+
+.message {
+  min-height: 100px !important;
 }
